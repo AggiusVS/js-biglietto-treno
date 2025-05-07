@@ -10,15 +10,9 @@ let sconto = 0;
 
 if (age < 18) {                         // sconto minori
     sconto = prezzoComp * 20 / 100;
-    const finalPrice = prezzoComp - sconto;
-    console.log(`Il tuo biglietto costerà ${finalPrice.toFixed(2)}€`);
 }
 else if (age > 65) {                // sconto over 65
     sconto = prezzoComp * 40 / 100;
-    const finalPrice = prezzoComp - sconto;
-    console.log(`Il tuo biglietto costerà ${finalPrice.toFixed(2)}€`);
 }
-else {
-    const finalPrice = prezzoComp - sconto;
-    console.log(`Il tuo biglietto costerà ${finalPrice.toFixed(2)}€`);
-}
+const finalPrice = prezzoComp - sconto;
+console.log(`Il tuo biglietto costerà ${finalPrice.toFixed(2)}€`);
